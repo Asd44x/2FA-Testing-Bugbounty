@@ -1,4 +1,4 @@
-                                              I will explain how you can do 2FA Test Processes in 8 Steps
+                                              I will explain how you can do 2FA Test Processes in 9 Steps
 
 1. Sign in with the first verification code and then try logging out and using the same verification code.
 
@@ -16,5 +16,8 @@
 
 8. If there is a backup code functionality, you can try this first with the correct username password and otp code and get the backup codes in the response with the repater 2.Give the account username and password correctly, but stop the request to give the otp code correctly.
 1.Replace = POST /api/{backupurl} 2.Replace = {"action": "backup_codes", "clusterNum": "000", "accountId": "test123", "email": "test123@gmail.com"} change it to and send the request.
+
+9. After 2FA is activated, if a password is required while deactivating, it should be checked if the valid password is checked by entering any password.
+
 
 I'll add it here as more...
