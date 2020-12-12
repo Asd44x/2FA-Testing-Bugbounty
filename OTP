@@ -1,0 +1,20 @@
+                                              I will explain how you can do 2FA Test Processes in 8 Steps
+
+1. Sign in with the first verification code and then try logging out and using the same verification code.
+
+2. Open the same account in 2 different browsers To enable 2fa from browser 1, complete all steps and enable 2fa then refresh the page from browser 2. The session should still not continue.
+
+3. Set referrer header to next 200 response path.
+
+4. Try using the verification code you created earlier in a different account.
+
+5. Try this when you notice that there is no 2fa sms rate limit. Stop the request and send the intruder. If 4 or 6 digits are desired, make the arrangements accordingly and set 1 progress as a total of 0000-9999 and start the request, search for a different length value in the returned answers and try to log in to the account using that code.
+
+6. Response manipulation provide input with correct information and stop request see that 200 response returns then enter with correct username and password but enter verification code incorrectly and stop request {"code": if you see "invalid_credentials"}, replace the request with {"success" : "true", "status": "200"} then send the request.
+
+7. When sending the code via sms, stop the request and if you see a string like (twoFactorNotificationType) "1" or similar, try changing it so you can get it via mail, not sms.
+
+8. If there is a backup code functionality, you can try this first with the correct username password and otp code and get the backup codes in the response with the repater 2.Give the account username and password correctly, but stop the request to give the otp code correctly.
+1.Replace = POST /api/{backupurl} 2.Replace = {"action": "backup_codes", "clusterNum": "000", "accountId": "test123", "email": "test123@gmail.com"} change it to and send the request.
+
+I'll add it here as more...
