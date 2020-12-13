@@ -1,4 +1,4 @@
-                                              I will explain how you can do 2FA Test Processes in 9 Steps
+                                              I will explain how you can do 2FA Test Processes in 15 Steps
 
 1. Sign in with the first verification code and then try logging out and using the same verification code.
 
@@ -18,6 +18,18 @@
 1.Replace = POST /api/{backupurl} 2.Replace = {"action": "backup_codes", "clusterNum": "000", "accountId": "test123", "email": "test123@gmail.com"} change it to and send the request.
 
 9. After 2FA is activated, if a password is required while deactivating, it should be checked if the valid password is checked by entering any password.
+
+10. After enabling 2fa, check if you can change the user password without 2fa.
+
+11. 2fa has been reactivated, but the old 2fa can still be used.
+
+12. I re-enabled 2fa but the same as before.
+
+13. 2FA in the same second try sending OTP for different users.
+
+14. User account locked out after several 2FA code attempts.
+
+15. Open in 2 different browsers and try to use the same 2FA code for the same account.
 
 
 I'll add it here as more...
